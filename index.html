@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Marilene Doces e Amores</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- NAV -->
+  <nav>
+    <div class="logo">🎂 Marilene Doces e Amores</div>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="encomenda.html">Fazer Encomenda</a></li>
+    </ul>
+    <a href="encomenda.html" class="nav-btn">Fazer Encomenda</a>
+  </nav>
+
+  <!-- HERO -->
+  <section id="inicio">
+    <div class="hero-bg"></div>
+    <div class="bolha bolha-1"></div>
+    <div class="bolha bolha-2"></div>
+    <div class="bolha bolha-3"></div>
+
+    <div class="hero-content">
+      <span class="hero-tag">🎂 Confeitaria Artesanal — Teresina, PI</span>
+      <h1>Bolos feitos com<br><span>amor de verdade</span></h1>
+      <p>Cada bolo é único, preparado com ingredientes frescos e muito carinho para tornar seu momento especial inesquecível.</p>
+
+      <div class="hero-btns">
+        <a href="encomenda.html" class="btn-primario">Fazer Encomenda</a>
+        <a href="#diferenciais" class="btn-secundario">Saiba mais</a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat">
+          <strong>100%</strong>
+          <span>Artesanal</span>
+        </div>
+        <div class="stat">
+          <strong>6+</strong>
+          <span>Sabores</span>
+        </div>
+        <div class="stat">
+          <strong>7 dias</strong>
+          <span>por semana</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DIFERENCIAIS -->
+  <section id="diferenciais">
+    <div class="secao-topo revelar">
+      <span class="secao-label">Por que nos escolher?</span>
+      <h2>Feito com <span>amor de verdade</span></h2>
+    </div>
+
+    <div class="diferenciais-grid">
+      <div class="diferencial-card revelar">
+        <div class="diferencial-icone">🌿</div>
+        <h3>Ingredientes Frescos</h3>
+        <p>Usamos apenas ingredientes frescos e selecionados em cada bolo, garantindo sabor e qualidade em cada fatia.</p>
+      </div>
+      <div class="diferencial-card revelar">
+        <div class="diferencial-icone">✨</div>
+        <h3>100% Artesanal</h3>
+        <p>Cada bolo é feito à mão com dedicação e carinho, do recheio à decoração, sem pressa e sem atalhos.</p>
+      </div>
+      <div class="diferencial-card revelar">
+        <div class="diferencial-icone">🎨</div>
+        <h3>Personalizações Exclusivas</h3>
+        <p>Criamos o bolo dos seus sonhos! Escolha tema, cores, recheio e decoração do seu jeito.</p>
+      </div>
+      <div class="diferencial-card revelar">
+        <div class="diferencial-icone">🛵</div>
+        <h3>Entrega Disponível</h3>
+        <p>Entregamos em Teresina para você receber seu bolo com comodidade e segurança no dia do evento.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- INFO DA LOJA -->
+  <section id="info-loja">
+    <div class="info-loja-container revelar">
+
+      <div class="info-bloco">
+        <div class="info-icone">📍</div>
+        <div>
+          <h4>Localização</h4>
+          <p>Teresina, Piauí</p>
+        </div>
+      </div>
+
+      <div class="info-divisor"></div>
+
+      <div class="info-bloco">
+        <div class="info-icone">🕐</div>
+        <div>
+          <h4>Atendimento</h4>
+          <p>Segunda a Domingo</p>
+          <p>08h às 20h</p>
+        </div>
+      </div>
+
+      <div class="info-divisor"></div>
+
+      <div class="info-bloco">
+        <div class="info-icone">💳</div>
+        <div>
+          <h4>Formas de Pagamento</h4>
+          <p>Pix · Transferência</p>
+          <p>Cartão de Crédito</p>
+        </div>
+      </div>
+
+      <div class="info-divisor"></div>
+
+      <div class="info-bloco">
+        <div class="info-icone">⚠️</div>
+        <div>
+          <h4>Confirmação</h4>
+          <p>50% antecipado</p>
+          <p>para confirmar</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ABAS: CARDÁPIO E GALERIA -->
+  <div id="conteudo">
+
+    <div class="abas revelar">
+      <button class="aba-btn ativa" onclick="mostrarAba('cardapio', event)">📋 Cardápio</button>
+      <button class="aba-btn" onclick="mostrarAba('galeria', event)">📸 Galeria</button>
+    </div>
+
+    <!-- ABA CARDÁPIO -->
+    <div id="cardapio" class="aba-conteudo ativa">
+
+      <!-- TAMANHOS -->
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo">🎂 Tamanhos e Preços</h3>
+        <div class="cards">
+          <div class="card revelar">
+            <h3>15 fatias</h3>
+            <span>R$ 115,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>20 fatias</h3>
+            <span>R$ 130,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>30 fatias</h3>
+            <span>R$ 140,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>40 fatias</h3>
+            <span>R$ 190,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>50 fatias</h3>
+            <span>R$ 225,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>70 fatias</h3>
+            <span>R$ 350,00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RECHEIOS -->
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo">🍓 Recheios</h3>
+        <div class="lista-grid">
+          <span class="item-lista">Coco</span>
+          <span class="item-lista">Prestígio</span>
+          <span class="item-lista">Brigadeiro/Chocolate</span>
+          <span class="item-lista">Sensação</span>
+          <span class="item-lista">Quatro Leites</span>
+          <span class="item-lista">Limão</span>
+          <span class="item-lista">Doce de Leite</span>
+          <span class="item-lista">Maracujá</span>
+          <span class="item-lista">Ninho</span>
+          <span class="item-lista">Café</span>
+          <span class="item-lista destaque">✨ Sabores Especiais — verificar disponibilidade</span>
+        </div>
+      </div>
+
+      <!-- MASSAS -->
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo">🎂 Massas</h3>
+        <div class="lista-grid">
+          <span class="item-lista">Red Velvet</span>
+          <span class="item-lista">Chocolate</span>
+          <span class="item-lista">Branca</span>
+          <span class="item-lista destaque">Cacau Black — acréscimo no valor</span>
+        </div>
+      </div>
+
+      <!-- KITS -->
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo">🎁 Kits</h3>
+        <div class="cards">
+          <div class="card revelar">
+            <h3>Kit Mensário</h3>
+            <p>Bolo (8 fatias) + 4 Cupcakes + 10 Docinhos</p>
+            <span>R$ 110,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 01</h3>
+            <p>Bolo (15 fatias) + 6 Cupcakes</p>
+            <span>R$ 135,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 02</h3>
+            <p>Bolo (20 fatias) + 6 Cupcakes + 20 Docinhos</p>
+            <span>R$ 170,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 03</h3>
+            <p>Bolo (30 fatias) + 6 Cupcakes + 30 Docinhos</p>
+            <span>R$ 190,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 04</h3>
+            <p>Bolo (40 fatias) + 6 Cupcakes + 50 Docinhos</p>
+            <span>R$ 300,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 05</h3>
+            <p>Bolo (50 fatias) + 6 Cupcakes + 50 Docinhos</p>
+            <span>R$ 350,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 06</h3>
+            <p>Bolo (70 fatias) + 6 Cupcakes + 50 Docinhos</p>
+            <span>R$ 500,00</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- BRIGADEIROS -->
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo">🍫 Brigadeiros</h3>
+        <div class="lista-grid">
+          <span class="item-lista">Centro — R$ 150,00</span>
+        </div>
+      </div>
+
+      <!-- PAGAMENTO -->
+      <div class="info-pagamento revelar">
+        <p>💳 Aceitamos <strong>transferências, Pix e cartão de crédito</strong></p>
+        <p>⚠️ Para confirmação da encomenda solicitamos <strong>50% do valor antecipado</strong></p>
+        <p>📞 <strong>(86) 99421-1516</strong></p>
+      </div>
+
+    </div>
+    <!-- FIM ABA CARDÁPIO -->
+
+    <!-- ABA GALERIA -->
+    <div id="galeria" class="aba-conteudo">
+      <div class="galeria-grid">
+        <img src="img/bolo1.jpg" alt="Bolo 1">
+        <img src="img/bolo2.jpg" alt="Bolo 2">
+        <img src="img/bolo3.jpg" alt="Bolo 3">
+        <img src="img/bolo4.jpg" alt="Bolo 4">
+        <img src="img/bolo5.jpg" alt="Bolo 5">
+        <img src="img/bolo6.jpg" alt="Bolo 6">
+      </div>
+    </div>
+    <!-- FIM ABA GALERIA -->
+
+  </div>
+  <!-- FIM CONTEUDO -->
+
+  <!-- RODAPÉ -->
+  <footer>
+    <p>© 2025 <strong>Marilene Doces e Amores</strong> — Teresina, PI</p>
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
