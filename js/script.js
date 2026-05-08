@@ -69,6 +69,20 @@ document.querySelectorAll('.revelar').forEach(function(el) {
 });
 
 // ================================
+// ABAS (index.html)
+// ================================
+function mostrarAba(id, event) {
+  document.querySelectorAll('.aba-conteudo').forEach(function(el) {
+    el.classList.remove('ativa');
+  });
+  document.querySelectorAll('.aba-btn').forEach(function(btn) {
+    btn.classList.remove('ativa');
+  });
+  document.getElementById(id).classList.add('ativa');
+  event.target.classList.add('ativa');
+}
+
+// ================================
 // TIPO DE PEDIDO (encomenda.html)
 // ================================
 function selecionarTipo(tipo, botao) {
@@ -111,7 +125,7 @@ if (form) {
       }
 
       var opcionais = [];
-      document.querySelectorAll('.opcionais-grid input[type=checkbox]:checked').forEach(function(cb) {
+      document.querySelectorAll('#secao-bolo .opcionais-grid input[type=checkbox]:checked').forEach(function(cb) {
         opcionais.push(cb.value);
       });
 
@@ -133,21 +147,40 @@ if (form) {
         return;
       }
 
+      var saboresKit = [];
+      document.querySelectorAll('#secao-kit .opcionais-grid input[type=checkbox]:checked').forEach(function(cb) {
+        saboresKit.push(cb.value);
+      });
+
       mensagem += '🎁 *Tipo:* Kit\n';
       mensagem += '📦 *Kit:* ' + kit + '\n';
       mensagem += '🍰 *Massa:* ' + massaKit + '\n';
       mensagem += '🍓 *Recheio:* ' + recheioKit + '\n';
+      if (saboresKit.length > 0) {
+        mensagem += '🍬 *Sabor dos Docinhos:* ' + saboresKit.join(', ') + '\n';
+      }
 
     } else if (secBrig && secBrig.style.display !== 'none') {
       var brigadeiro = document.getElementById('brigadeiro').value;
 
       if (!brigadeiro) {
-        alert('Por favor, selecione a opção de brigadeiro.');
+        alert('Por favor, selecione a quantidade de brigadeiros.');
+        return;
+      }
+
+      var saboresBrig = [];
+      document.querySelectorAll('#secao-brigadeiro .opcionais-grid input[type=checkbox]:checked').forEach(function(cb) {
+        saboresBrig.push(cb.value);
+      });
+
+      if (saboresBrig.length === 0) {
+        alert('Por favor, selecione pelo menos um sabor de brigadeiro.');
         return;
       }
 
       mensagem += '🍫 *Tipo:* Brigadeiros\n';
-      mensagem += '🍬 *Opção:* ' + brigadeiro + '\n';
+      mensagem += '🍬 *Quantidade:* ' + brigadeiro + '\n';
+      mensagem += '😋 *Sabores:* ' + saboresBrig.join(', ') + '\n';
     }
 
     if (obs) mensagem += '📝 *Obs:* ' + obs + '\n';

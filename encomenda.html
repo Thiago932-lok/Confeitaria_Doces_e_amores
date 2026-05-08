@@ -15,11 +15,12 @@
       <li><a href="index.html">Início</a></li>
       <li><a href="encomenda.html">Fazer Encomenda</a></li>
     </ul>
+    <a href="encomenda.html" class="nav-btn">Fazer Encomenda</a>
   </nav>
 
   <!-- FORMULÁRIO -->
   <section id="encomenda">
-    <h2>Fazer Encomenda 🎂</h2>
+    <h2>Fazer Encomenda <span>🎂</span></h2>
     <p class="encomenda-subtitulo">Selecione o que desejar e será direcionado ao nosso WhatsApp!</p>
 
     <form id="form-encomenda">
@@ -79,7 +80,6 @@
           </select>
         </div>
 
-        <!-- OPCIONAIS -->
         <div class="form-grupo">
           <label>Opcionais (opcional)</label>
           <div class="opcionais-grid">
@@ -150,6 +150,24 @@
           </select>
         </div>
 
+        <div class="form-grupo">
+          <label>Sabor dos Docinhos do Kit</label>
+          <div class="opcionais-grid">
+            <label class="opcional-item">
+              <input type="checkbox" value="Tradicional"> Tradicional
+            </label>
+            <label class="opcional-item">
+              <input type="checkbox" value="Beijinho"> Beijinho
+            </label>
+            <label class="opcional-item">
+              <input type="checkbox" value="Ninho"> Ninho
+            </label>
+          </div>
+          <small style="color: #7a4060; font-size: 0.8rem; margin-top: 0.4rem;">
+            💡 Você pode escolher mais de um sabor!
+          </small>
+        </div>
+
       </div>
       <!-- FIM SEÇÃO KIT -->
 
@@ -157,11 +175,29 @@
       <div id="secao-brigadeiro" class="secao-pedido" style="display:none;">
 
         <div class="form-grupo">
-          <label>Brigadeiros</label>
+          <label>Quantidade</label>
           <select id="brigadeiro">
-            <option value="">Selecione...</option>
-            <option value="Cento de Brigadeiros — R$ 150,00">Cento — R$ 150,00</option>
+            <option value="">Selecione a quantidade...</option>
+            <option value="Cento de Brigadeiros — R$ 150,00">Cento (100 unidades) — R$ 150,00</option>
           </select>
+        </div>
+
+        <div class="form-grupo">
+          <label>Sabores dos Brigadeiros</label>
+          <div class="opcionais-grid">
+            <label class="opcional-item">
+              <input type="checkbox" value="Tradicional"> Tradicional
+            </label>
+            <label class="opcional-item">
+              <input type="checkbox" value="Beijinho"> Beijinho
+            </label>
+            <label class="opcional-item">
+              <input type="checkbox" value="Ninho"> Ninho
+            </label>
+          </div>
+          <small style="color: #7a4060; font-size: 0.8rem; margin-top: 0.4rem;">
+            💡 Você pode escolher mais de um sabor!
+          </small>
         </div>
 
       </div>
@@ -182,7 +218,7 @@
 
   <!-- RODAPÉ -->
   <footer>
-    <p>© 2025 Marilene Doces e Amores — Fortaleza, CE</p>
+    <p>© 2025 <strong>Marilene Doces e Amores</strong> — Teresina, PI</p>
   </footer>
 
   <script src="js/script.js"></script>
