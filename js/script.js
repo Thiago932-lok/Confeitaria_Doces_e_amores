@@ -69,20 +69,6 @@ document.querySelectorAll('.revelar').forEach(function(el) {
 });
 
 // ================================
-// ABAS (index.html)
-// ================================
-function mostrarAba(id, event) {
-  document.querySelectorAll('.aba-conteudo').forEach(function(el) {
-    el.classList.remove('ativa');
-  });
-  document.querySelectorAll('.aba-btn').forEach(function(btn) {
-    btn.classList.remove('ativa');
-  });
-  document.getElementById(id).classList.add('ativa');
-  event.target.classList.add('ativa');
-}
-
-// ================================
 // TIPO DE PEDIDO (encomenda.html)
 // ================================
 function selecionarTipo(tipo, botao) {
@@ -108,7 +94,6 @@ if (form) {
     e.preventDefault();
 
     var mensagem = '🎂 *Olá! Gostaria de fazer uma encomenda!*\n\n';
-    var tipoBotao = document.querySelector('.tipo-btn.ativo');
     var obs = document.getElementById('obs').value;
 
     var secBolo = document.getElementById('secao-bolo');
@@ -139,8 +124,8 @@ if (form) {
       }
 
     } else if (secKit && secKit.style.display !== 'none') {
-      var kit       = document.getElementById('kit').value;
-      var massaKit  = document.getElementById('massa-kit').value;
+      var kit        = document.getElementById('kit').value;
+      var massaKit   = document.getElementById('massa-kit').value;
       var recheioKit = document.getElementById('recheio-kit').value;
 
       if (!kit || !massaKit || !recheioKit) {

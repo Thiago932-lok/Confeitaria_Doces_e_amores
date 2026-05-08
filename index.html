@@ -13,7 +13,6 @@
     <div class="logo">🎂 Marilene Doces e Amores</div>
     <ul>
       <li><a href="index.html">Início</a></li>
-      <li><a href="encomenda.html">Fazer Encomenda</a></li>
     </ul>
     <a href="encomenda.html" class="nav-btn">Fazer Encomenda</a>
   </nav>
@@ -56,7 +55,7 @@
   <section id="diferenciais">
     <div class="secao-topo revelar">
       <span class="secao-label">Por que nos escolher?</span>
-      <h2>Feito com <span>amor de verdade</span></h2>
+      <h2>Feito com <span>amor e qualidade</span></h2>
     </div>
 
     <div class="diferenciais-grid">
@@ -131,152 +130,121 @@
     </div>
   </section>
 
-  <!-- ABAS: CARDÁPIO E GALERIA -->
+  <!-- CARDÁPIO -->
   <div id="conteudo">
 
-    <div class="abas revelar">
-      <button class="aba-btn ativa" onclick="mostrarAba('cardapio', event)">📋 Cardápio</button>
-      <button class="aba-btn" onclick="mostrarAba('galeria', event)">📸 Galeria</button>
+    <div class="secao-cardapio revelar">
+      <h3 class="secao-titulo">🎂 Tamanhos e Preços</h3>
+      <div class="cards">
+        <div class="card revelar">
+          <h3>15 fatias</h3>
+          <span>R$ 115,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>20 fatias</h3>
+          <span>R$ 130,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>30 fatias</h3>
+          <span>R$ 140,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>40 fatias</h3>
+          <span>R$ 190,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>50 fatias</h3>
+          <span>R$ 225,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>70 fatias</h3>
+          <span>R$ 350,00</span>
+        </div>
+      </div>
     </div>
 
-    <!-- ABA CARDÁPIO -->
-    <div id="cardapio" class="aba-conteudo ativa">
-
-      <!-- TAMANHOS -->
-      <div class="secao-cardapio revelar">
-        <h3 class="secao-titulo">🎂 Tamanhos e Preços</h3>
-        <div class="cards">
-          <div class="card revelar">
-            <h3>15 fatias</h3>
-            <span>R$ 115,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>20 fatias</h3>
-            <span>R$ 130,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>30 fatias</h3>
-            <span>R$ 140,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>40 fatias</h3>
-            <span>R$ 190,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>50 fatias</h3>
-            <span>R$ 225,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>70 fatias</h3>
-            <span>R$ 350,00</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- RECHEIOS -->
-      <div class="secao-cardapio revelar">
-        <h3 class="secao-titulo">🍓 Recheios</h3>
-        <div class="lista-grid">
-          <span class="item-lista">Coco</span>
-          <span class="item-lista">Prestígio</span>
-          <span class="item-lista">Brigadeiro/Chocolate</span>
-          <span class="item-lista">Sensação</span>
-          <span class="item-lista">Quatro Leites</span>
-          <span class="item-lista">Limão</span>
-          <span class="item-lista">Doce de Leite</span>
-          <span class="item-lista">Maracujá</span>
-          <span class="item-lista">Ninho</span>
-          <span class="item-lista">Café</span>
-          <span class="item-lista destaque">✨ Sabores Especiais — verificar disponibilidade</span>
-        </div>
-      </div>
-
-      <!-- MASSAS -->
-      <div class="secao-cardapio revelar">
-        <h3 class="secao-titulo">🎂 Massas</h3>
-        <div class="lista-grid">
-          <span class="item-lista">Red Velvet</span>
-          <span class="item-lista">Chocolate</span>
-          <span class="item-lista">Branca</span>
-          <span class="item-lista destaque">Cacau Black — acréscimo no valor</span>
-        </div>
-      </div>
-
-      <!-- KITS -->
-      <div class="secao-cardapio revelar">
-        <h3 class="secao-titulo">🎁 Kits</h3>
-        <div class="cards">
-          <div class="card revelar">
-            <h3>Kit Mensário</h3>
-            <p>Bolo (8 fatias) + 4 Cupcakes + 10 Docinhos</p>
-            <span>R$ 110,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>Kit 01</h3>
-            <p>Bolo (15 fatias) + 6 Cupcakes</p>
-            <span>R$ 135,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>Kit 02</h3>
-            <p>Bolo (20 fatias) + 6 Cupcakes + 20 Docinhos</p>
-            <span>R$ 170,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>Kit 03</h3>
-            <p>Bolo (30 fatias) + 6 Cupcakes + 30 Docinhos</p>
-            <span>R$ 190,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>Kit 04</h3>
-            <p>Bolo (40 fatias) + 6 Cupcakes + 50 Docinhos</p>
-            <span>R$ 300,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>Kit 05</h3>
-            <p>Bolo (50 fatias) + 6 Cupcakes + 50 Docinhos</p>
-            <span>R$ 350,00</span>
-          </div>
-          <div class="card revelar">
-            <h3>Kit 06</h3>
-            <p>Bolo (70 fatias) + 6 Cupcakes + 50 Docinhos</p>
-            <span>R$ 500,00</span>
-          </div>
-        </div>
-      </div>
-
-      <!-- BRIGADEIROS -->
-      <div class="secao-cardapio revelar">
-        <h3 class="secao-titulo">🍫 Brigadeiros</h3>
-        <div class="lista-grid">
-          <span class="item-lista">Centro — R$ 150,00</span>
-        </div>
-      </div>
-
-      <!-- PAGAMENTO -->
-      <div class="info-pagamento revelar">
-        <p>💳 Aceitamos <strong>transferências, Pix e cartão de crédito</strong></p>
-        <p>⚠️ Para confirmação da encomenda solicitamos <strong>50% do valor antecipado</strong></p>
-        <p>📞 <strong>(86) 99421-1516</strong></p>
-      </div>
-
-    </div>
-    <!-- FIM ABA CARDÁPIO -->
-
-    <!-- ABA GALERIA -->
-    <div id="galeria" class="aba-conteudo">
-      <div class="galeria-grid">
-        <img src="img/bolo1.jpg" alt="Bolo 1">
-        <img src="img/bolo2.jpg" alt="Bolo 2">
-        <img src="img/bolo3.jpg" alt="Bolo 3">
-        <img src="img/bolo4.jpg" alt="Bolo 4">
-        <img src="img/bolo5.jpg" alt="Bolo 5">
-        <img src="img/bolo6.jpg" alt="Bolo 6">
+    <div class="secao-cardapio revelar">
+      <h3 class="secao-titulo">🍓 Recheios</h3>
+      <div class="lista-grid">
+        <span class="item-lista">Coco</span>
+        <span class="item-lista">Prestígio</span>
+        <span class="item-lista">Brigadeiro/Chocolate</span>
+        <span class="item-lista">Sensação</span>
+        <span class="item-lista">Quatro Leites</span>
+        <span class="item-lista">Limão</span>
+        <span class="item-lista">Doce de Leite</span>
+        <span class="item-lista">Maracujá</span>
+        <span class="item-lista">Ninho</span>
+        <span class="item-lista">Café</span>
+        <span class="item-lista destaque">✨ Sabores Especiais — verificar disponibilidade</span>
       </div>
     </div>
-    <!-- FIM ABA GALERIA -->
+
+    <div class="secao-cardapio revelar">
+      <h3 class="secao-titulo">🎂 Massas</h3>
+      <div class="lista-grid">
+        <span class="item-lista">Red Velvet</span>
+        <span class="item-lista">Chocolate</span>
+        <span class="item-lista">Branca</span>
+        <span class="item-lista destaque">Cacau Black — acréscimo no valor</span>
+      </div>
+    </div>
+
+    <div class="secao-cardapio revelar">
+      <h3 class="secao-titulo">🎁 Kits</h3>
+      <div class="cards">
+        <div class="card revelar">
+          <h3>Kit Mensário</h3>
+          <p>Bolo (8 fatias) + 4 Cupcakes + 10 Docinhos</p>
+          <span>R$ 110,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>Kit 01</h3>
+          <p>Bolo (15 fatias) + 6 Cupcakes</p>
+          <span>R$ 135,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>Kit 02</h3>
+          <p>Bolo (20 fatias) + 6 Cupcakes + 20 Docinhos</p>
+          <span>R$ 170,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>Kit 03</h3>
+          <p>Bolo (30 fatias) + 6 Cupcakes + 30 Docinhos</p>
+          <span>R$ 190,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>Kit 04</h3>
+          <p>Bolo (40 fatias) + 6 Cupcakes + 50 Docinhos</p>
+          <span>R$ 300,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>Kit 05</h3>
+          <p>Bolo (50 fatias) + 6 Cupcakes + 50 Docinhos</p>
+          <span>R$ 350,00</span>
+        </div>
+        <div class="card revelar">
+          <h3>Kit 06</h3>
+          <p>Bolo (70 fatias) + 6 Cupcakes + 50 Docinhos</p>
+          <span>R$ 500,00</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="secao-cardapio revelar">
+      <h3 class="secao-titulo">🍫 Brigadeiros</h3>
+      <div class="lista-grid">
+        <span class="item-lista">Centro — R$ 150,00</span>
+      </div>
+    </div>
+
+    <div class="info-pagamento revelar">
+      <p>💳 Aceitamos <strong>transferências, Pix e cartão de crédito</strong></p>
+      <p>⚠️ Para confirmação da encomenda solicitamos <strong>50% do valor antecipado</strong></p>
+      <p>📞 <strong>(86) 99421-1516</strong></p>
+    </div>
 
   </div>
-  <!-- FIM CONTEUDO -->
 
   <!-- RODAPÉ -->
   <footer>

@@ -19,24 +19,19 @@
   --sombra:      rgba(233, 30, 140, 0.15);
 }
 
-html {
-  scroll-behavior: smooth;
-}
+html { scroll-behavior: smooth; }
 
 body {
   font-family: 'Segoe UI', sans-serif;
   background: var(--creme);
   color: var(--texto);
   overflow-x: hidden;
+  cursor: none;
 }
 
 /* ================================
    CURSOR PERSONALIZADO
 ================================ */
-body {
-  cursor: none;
-}
-
 .cursor {
   width: 12px;
   height: 12px;
@@ -110,10 +105,8 @@ nav ul a {
 nav ul a::after {
   content: '';
   position: absolute;
-  bottom: -4px;
-  left: 0;
-  width: 0;
-  height: 2px;
+  bottom: -4px; left: 0;
+  width: 0; height: 2px;
   background: var(--rosa);
   border-radius: 2px;
   transition: width 0.3s ease;
@@ -162,7 +155,6 @@ nav ul a:hover::after { width: 100%; }
   z-index: 0;
 }
 
-/* bolhas decorativas */
 .bolha {
   position: absolute;
   border-radius: 50%;
@@ -177,7 +169,7 @@ nav ul a:hover::after { width: 100%; }
 
 @keyframes flutuar {
   0%, 100% { transform: translateY(0px) scale(1); }
-  50% { transform: translateY(-20px) scale(1.05); }
+  50%       { transform: translateY(-20px) scale(1.05); }
 }
 
 .hero-content {
@@ -267,7 +259,6 @@ nav ul a:hover::after { width: 100%; }
   transform: translateY(-3px);
 }
 
-/* contador hero */
 .hero-stats {
   display: flex;
   justify-content: center;
@@ -276,9 +267,7 @@ nav ul a:hover::after { width: 100%; }
   flex-wrap: wrap;
 }
 
-.stat {
-  text-align: center;
-}
+.stat { text-align: center; }
 
 .stat strong {
   display: block;
@@ -299,9 +288,7 @@ nav ul a:hover::after { width: 100%; }
 /* ================================
    SEÇÃO GERAL
 ================================ */
-section {
-  padding: 5rem 2rem;
-}
+section { padding: 5rem 2rem; }
 
 .secao-topo {
   text-align: center;
@@ -335,7 +322,7 @@ section {
 }
 
 /* ================================
-   ABAS
+   CARDÁPIO
 ================================ */
 #conteudo {
   max-width: 1100px;
@@ -343,57 +330,7 @@ section {
   padding: 0 2rem 5rem;
 }
 
-.abas {
-  display: flex;
-  justify-content: center;
-  gap: 0.8rem;
-  margin-bottom: 3rem;
-  background: var(--cinza);
-  padding: 0.5rem;
-  border-radius: 50px;
-  width: fit-content;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.aba-btn {
-  background: transparent;
-  border: none;
-  color: #7a4060;
-  padding: 0.65rem 1.8rem;
-  border-radius: 50px;
-  font-size: 0.95rem;
-  font-weight: 600;
-  cursor: pointer;
-  font-family: 'Segoe UI', sans-serif;
-  transition: all 0.35s ease;
-}
-
-.aba-btn.ativa {
-  background: linear-gradient(135deg, var(--rosa), var(--rosa-escuro));
-  color: #fff;
-  box-shadow: 0 4px 15px var(--sombra);
-}
-
-.aba-btn:hover:not(.ativa) {
-  background: var(--rosa-suave);
-  color: var(--rosa);
-}
-
-.aba-conteudo { display: none; }
-.aba-conteudo.ativa { display: block; animation: fadeIn 0.4s ease; }
-
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
-  to   { opacity: 1; transform: translateY(0); }
-}
-
-/* ================================
-   SEÇÕES DO CARDÁPIO
-================================ */
-.secao-cardapio {
-  margin-bottom: 3.5rem;
-}
+.secao-cardapio { margin-bottom: 3.5rem; }
 
 .secao-titulo {
   font-size: 1.3rem;
@@ -473,7 +410,7 @@ section {
   font-size: 1rem;
 }
 
-/* LISTA (recheios/massas) */
+/* LISTA */
 .lista-grid {
   display: flex;
   flex-wrap: wrap;
@@ -523,29 +460,6 @@ section {
   color: var(--rosa-escuro);
 }
 
-/* GALERIA */
-.galeria-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
-}
-
-.galeria-grid img {
-  width: 100%;
-  border-radius: 16px;
-  object-fit: cover;
-  height: 220px;
-  border: 2px solid var(--rosa-claro);
-  transition: all 0.4s ease;
-  filter: brightness(0.97);
-}
-
-.galeria-grid img:hover {
-  transform: scale(1.04);
-  box-shadow: 0 12px 32px var(--sombra);
-  filter: brightness(1.04);
-}
-
 /* ================================
    RODAPÉ
 ================================ */
@@ -588,7 +502,6 @@ footer strong { color: #fff; }
   font-size: 1rem;
 }
 
-/* TIPO BOTÕES */
 .opcoes-tipo {
   display: flex;
   gap: 0.8rem;
@@ -622,7 +535,6 @@ footer strong { color: #fff; }
   transform: translateY(-2px);
 }
 
-/* GRUPO FORM */
 .form-grupo {
   display: flex;
   flex-direction: column;
@@ -666,7 +578,6 @@ footer strong { color: #fff; }
   cursor: pointer;
 }
 
-/* OPCIONAIS */
 .opcionais-grid {
   display: flex;
   flex-wrap: wrap;
@@ -698,7 +609,6 @@ footer strong { color: #fff; }
 
 .opcional-item input { display: none; }
 
-/* SEÇÃO PEDIDO */
 .secao-pedido {
   background: var(--branco);
   border: 1.5px solid var(--rosa-claro);
@@ -708,7 +618,6 @@ footer strong { color: #fff; }
   animation: fadeIn 0.4s ease;
 }
 
-/* BOTÃO WHATSAPP */
 .btn-whatsapp {
   background: linear-gradient(135deg, #25D366, #128C7E);
   color: #fff;
@@ -744,6 +653,10 @@ footer strong { color: #fff; }
   transform: translateY(0);
 }
 
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
 
 /* ================================
    DIFERENCIAIS
@@ -788,9 +701,7 @@ footer strong { color: #fff; }
   border-color: var(--rosa);
 }
 
-.diferencial-card:hover::after {
-  opacity: 1;
-}
+.diferencial-card:hover::after { opacity: 1; }
 
 .diferencial-icone {
   font-size: 2.8rem;
@@ -848,9 +759,7 @@ footer strong { color: #fff; }
   transition: transform 0.3s ease;
 }
 
-.info-bloco:hover {
-  transform: translateY(-4px);
-}
+.info-bloco:hover { transform: translateY(-4px); }
 
 .info-icone {
   font-size: 2rem;
