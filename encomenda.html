@@ -3,223 +3,233 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fazer Encomenda — Marilene Bolos</title>
+  <meta name="description" content="Faça sua encomenda de bolo, kit ou brigadeiros — Marilene Doces e Amores, Teresina PI.">
+  <title>Fazer Encomenda — Marilene Doces e Amores</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
+<body class="pagina-encomenda">
 
-  <!-- NAV -->
   <nav>
-    <div class="logo">🎂 Marilene Doces e Amores</div>
+    <a href="index.html" class="logo">
+      <span class="logo-nome">Marilene Doces e Amores</span>
+      <span class="logo-tagline">Confeitaria artesanal</span>
+    </a>
     <ul>
       <li><a href="index.html">Início</a></li>
-      <li><a href="encomenda.html">Fazer Encomenda</a></li>
+      <li><a href="index.html#cardapio">Cardápio</a></li>
+      <li><a href="encomenda.html" class="ativo">Encomenda</a></li>
     </ul>
-    <a href="encomenda.html" class="nav-btn">Fazer Encomenda</a>
+    <a href="encomenda.html" class="nav-btn">Fazer encomenda</a>
   </nav>
 
-  <!-- FORMULÁRIO -->
   <section id="encomenda">
-    <h2>Fazer Encomenda <span>🎂</span></h2>
-    <p class="encomenda-subtitulo">Selecione o que desejar e será direcionado ao nosso WhatsApp!</p>
+    <div class="encomenda-cabecalho">
+      <h2>Fazer encomenda</h2>
+      <p class="encomenda-subtitulo">Monte seu pedido e envie direto pelo WhatsApp em poucos passos.</p>
+    </div>
 
-    <form id="form-encomenda">
-
-      <!-- TIPO DE PEDIDO -->
-      <div class="form-grupo">
-        <label>O que você quer pedir?</label>
-        <div class="opcoes-tipo">
-          <button type="button" class="tipo-btn ativo" onclick="selecionarTipo('bolo', this)">🎂 Bolo</button>
-          <button type="button" class="tipo-btn" onclick="selecionarTipo('kit', this)">🎁 Kit</button>
-          <button type="button" class="tipo-btn" onclick="selecionarTipo('brigadeiro', this)">🍫 Brigadeiros</button>
-        </div>
-      </div>
-
-      <!-- SEÇÃO BOLO -->
-      <div id="secao-bolo" class="secao-pedido">
+    <div class="form-card">
+      <form id="form-encomenda">
 
         <div class="form-grupo">
-          <label>Tamanho do bolo</label>
-          <select id="tamanho">
-            <option value="">Selecione o tamanho...</option>
-            <option value="15 fatias — R$ 115,00">15 fatias — R$ 115,00</option>
-            <option value="20 fatias — R$ 130,00">20 fatias — R$ 130,00</option>
-            <option value="30 fatias — R$ 140,00">30 fatias — R$ 140,00</option>
-            <option value="40 fatias — R$ 190,00">40 fatias — R$ 190,00</option>
-            <option value="50 fatias — R$ 225,00">50 fatias — R$ 225,00</option>
-            <option value="70 fatias — R$ 350,00">70 fatias — R$ 350,00</option>
-          </select>
-        </div>
-
-        <div class="form-grupo">
-          <label>Massa</label>
-          <select id="massa">
-            <option value="">Selecione a massa...</option>
-            <option value="Red Velvet">Red Velvet</option>
-            <option value="Chocolate">Chocolate</option>
-            <option value="Branca">Branca</option>
-            <option value="Cacau Black (acréscimo no valor)">Cacau Black (acréscimo no valor)</option>
-          </select>
-        </div>
-
-        <div class="form-grupo">
-          <label>Recheio</label>
-          <select id="recheio">
-            <option value="">Selecione o recheio...</option>
-            <option value="Coco">Coco</option>
-            <option value="Prestígio">Prestígio</option>
-            <option value="Brigadeiro/Chocolate">Brigadeiro/Chocolate</option>
-            <option value="Sensação">Sensação</option>
-            <option value="Quatro Leites">Quatro Leites</option>
-            <option value="Limão">Limão</option>
-            <option value="Doce de Leite">Doce de Leite</option>
-            <option value="Maracujá">Maracujá</option>
-            <option value="Ninho">Ninho</option>
-            <option value="Café">Café</option>
-            <option value="Sabor Especial (verificar disponibilidade)">Sabor Especial</option>
-          </select>
-        </div>
-
-        <div class="form-grupo">
-          <label>Opcionais (opcional)</label>
-          <div class="opcionais-grid">
-            <label class="opcional-item">
-              <input type="checkbox" value="+ 6 Cupcakes"> 6 Cupcakes
-            </label>
-            <label class="opcional-item">
-              <input type="checkbox" value="+ 10 Docinhos"> 10 Docinhos
-            </label>
-            <label class="opcional-item">
-              <input type="checkbox" value="+ 20 Docinhos"> 20 Docinhos
-            </label>
-            <label class="opcional-item">
-              <input type="checkbox" value="+ 30 Docinhos"> 30 Docinhos
-            </label>
-            <label class="opcional-item">
-              <input type="checkbox" value="+ 50 Docinhos"> 50 Docinhos
-            </label>
+          <label>O que você deseja pedir?</label>
+          <div class="opcoes-tipo">
+            <button type="button" class="tipo-btn ativo" onclick="selecionarTipo('bolo', this)">Bolo</button>
+            <button type="button" class="tipo-btn" onclick="selecionarTipo('kit', this)">Kit</button>
+            <button type="button" class="tipo-btn" onclick="selecionarTipo('brigadeiro', this)">Brigadeiros</button>
           </div>
         </div>
 
-      </div>
-      <!-- FIM SEÇÃO BOLO -->
+        <div id="secao-bolo" class="secao-pedido">
 
-      <!-- SEÇÃO KIT -->
-      <div id="secao-kit" class="secao-pedido" style="display:none;">
-
-        <div class="form-grupo">
-          <label>Escolha o Kit</label>
-          <select id="kit">
-            <option value="">Selecione o kit...</option>
-            <option value="Kit Mensário — R$ 110,00 (Bolo 8 fatias + 4 Cupcakes + 10 Docinhos)">Kit Mensário — R$ 110,00</option>
-            <option value="Kit 01 — R$ 135,00 (Bolo 15 fatias + 6 Cupcakes)">Kit 01 — R$ 135,00</option>
-            <option value="Kit 02 — R$ 170,00 (Bolo 20 fatias + 6 Cupcakes + 20 Docinhos)">Kit 02 — R$ 170,00</option>
-            <option value="Kit 03 — R$ 190,00 (Bolo 30 fatias + 6 Cupcakes + 30 Docinhos)">Kit 03 — R$ 190,00</option>
-            <option value="Kit 04 — R$ 300,00 (Bolo 40 fatias + 6 Cupcakes + 50 Docinhos)">Kit 04 — R$ 300,00</option>
-            <option value="Kit 05 — R$ 350,00 (Bolo 50 fatias + 6 Cupcakes + 50 Docinhos)">Kit 05 — R$ 350,00</option>
-            <option value="Kit 06 — R$ 500,00 (Bolo 70 fatias + 6 Cupcakes + 50 Docinhos)">Kit 06 — R$ 500,00</option>
-          </select>
-        </div>
-
-        <div class="form-grupo">
-          <label>Massa</label>
-          <select id="massa-kit">
-            <option value="">Selecione a massa...</option>
-            <option value="Red Velvet">Red Velvet</option>
-            <option value="Chocolate">Chocolate</option>
-            <option value="Branca">Branca</option>
-            <option value="Cacau Black (acréscimo no valor)">Cacau Black (acréscimo no valor)</option>
-          </select>
-        </div>
-
-        <div class="form-grupo">
-          <label>Recheio</label>
-          <select id="recheio-kit">
-            <option value="">Selecione o recheio...</option>
-            <option value="Coco">Coco</option>
-            <option value="Prestígio">Prestígio</option>
-            <option value="Brigadeiro/Chocolate">Brigadeiro/Chocolate</option>
-            <option value="Sensação">Sensação</option>
-            <option value="Quatro Leites">Quatro Leites</option>
-            <option value="Limão">Limão</option>
-            <option value="Doce de Leite">Doce de Leite</option>
-            <option value="Maracujá">Maracujá</option>
-            <option value="Ninho">Ninho</option>
-            <option value="Café">Café</option>
-            <option value="Sabor Especial (verificar disponibilidade)">Sabor Especial</option>
-          </select>
-        </div>
-
-        <div class="form-grupo">
-          <label>Sabor dos Docinhos do Kit</label>
-          <div class="opcionais-grid">
-            <label class="opcional-item">
-              <input type="checkbox" value="Tradicional"> Tradicional
-            </label>
-            <label class="opcional-item">
-              <input type="checkbox" value="Beijinho"> Beijinho
-            </label>
-            <label class="opcional-item">
-              <input type="checkbox" value="Ninho"> Ninho
-            </label>
+          <div class="form-grupo">
+            <label>Tamanho do bolo</label>
+            <select id="tamanho">
+              <option value="">Selecione o tamanho...</option>
+              <option value="15 fatias — R$ 115,00">15 fatias — R$ 115,00</option>
+              <option value="20 fatias — R$ 130,00">20 fatias — R$ 130,00</option>
+              <option value="30 fatias — R$ 140,00">30 fatias — R$ 140,00</option>
+              <option value="40 fatias — R$ 190,00">40 fatias — R$ 190,00</option>
+              <option value="50 fatias — R$ 225,00">50 fatias — R$ 225,00</option>
+              <option value="70 fatias — R$ 350,00">70 fatias — R$ 350,00</option>
+            </select>
           </div>
-          <small style="color: #7a4060; font-size: 0.8rem; margin-top: 0.4rem;">
-            💡 Você pode escolher mais de um sabor!
-          </small>
-        </div>
 
-      </div>
-      <!-- FIM SEÇÃO KIT -->
-
-      <!-- SEÇÃO BRIGADEIROS -->
-      <div id="secao-brigadeiro" class="secao-pedido" style="display:none;">
-
-        <div class="form-grupo">
-          <label>Quantidade</label>
-          <select id="brigadeiro">
-            <option value="">Selecione a quantidade...</option>
-            <option value="Cento de Brigadeiros — R$ 150,00">Cento (100 unidades) — R$ 150,00</option>
-          </select>
-        </div>
-
-        <div class="form-grupo">
-          <label>Sabores dos Brigadeiros</label>
-          <div class="opcionais-grid">
-            <label class="opcional-item">
-              <input type="checkbox" value="Tradicional"> Tradicional
-            </label>
-            <label class="opcional-item">
-              <input type="checkbox" value="Beijinho"> Beijinho
-            </label>
-            <label class="opcional-item">
-              <input type="checkbox" value="Ninho"> Ninho
-            </label>
+          <div class="form-grupo">
+            <label>Massa</label>
+            <select id="massa">
+              <option value="">Selecione a massa...</option>
+              <option value="Red Velvet">Red Velvet</option>
+              <option value="Chocolate">Chocolate</option>
+              <option value="Branca">Branca</option>
+              <option value="Cacau Black (acréscimo no valor)">Cacau Black (acréscimo no valor)</option>
+            </select>
           </div>
-          <small style="color: #7a4060; font-size: 0.8rem; margin-top: 0.4rem;">
-            💡 Você pode escolher mais de um sabor!
-          </small>
+
+          <div class="form-grupo">
+            <label>Recheio</label>
+            <select id="recheio">
+              <option value="">Selecione o recheio...</option>
+              <option value="Coco">Coco</option>
+              <option value="Prestígio">Prestígio</option>
+              <option value="Brigadeiro/Chocolate">Brigadeiro/Chocolate</option>
+              <option value="Sensação">Sensação</option>
+              <option value="Quatro Leites">Quatro Leites</option>
+              <option value="Limão">Limão</option>
+              <option value="Doce de Leite">Doce de Leite</option>
+              <option value="Maracujá">Maracujá</option>
+              <option value="Ninho">Ninho</option>
+              <option value="Café">Café</option>
+              <option value="Sabor Especial (verificar disponibilidade)">Sabor Especial</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label>Opcionais</label>
+            <div class="opcionais-grid">
+              <label class="opcional-item">
+                <input type="checkbox" value="+ 6 Cupcakes"> 6 Cupcakes
+              </label>
+              <label class="opcional-item">
+                <input type="checkbox" value="+ 10 Docinhos"> 10 Docinhos
+              </label>
+              <label class="opcional-item">
+                <input type="checkbox" value="+ 20 Docinhos"> 20 Docinhos
+              </label>
+              <label class="opcional-item">
+                <input type="checkbox" value="+ 30 Docinhos"> 30 Docinhos
+              </label>
+              <label class="opcional-item">
+                <input type="checkbox" value="+ 50 Docinhos"> 50 Docinhos
+              </label>
+            </div>
+          </div>
+
         </div>
 
-      </div>
-      <!-- FIM SEÇÃO BRIGADEIROS -->
+        <div id="secao-kit" class="secao-pedido" style="display:none;">
 
-      <!-- OBSERVAÇÕES -->
-      <div class="form-grupo">
-        <label>Alguma observação? (opcional)</label>
-        <textarea id="obs" placeholder="Ex: tema da festa, cor, data do evento..." rows="3"></textarea>
-      </div>
+          <div class="form-grupo">
+            <label>Escolha o kit</label>
+            <select id="kit">
+              <option value="">Selecione o kit...</option>
+              <option value="Kit Mensário — R$ 110,00 (Bolo 8 fatias + 4 Cupcakes + 10 Docinhos)">Kit Mensário — R$ 110,00</option>
+              <option value="Kit 01 — R$ 135,00 (Bolo 15 fatias + 6 Cupcakes)">Kit 01 — R$ 135,00</option>
+              <option value="Kit 02 — R$ 170,00 (Bolo 20 fatias + 6 Cupcakes + 20 Docinhos)">Kit 02 — R$ 170,00</option>
+              <option value="Kit 03 — R$ 190,00 (Bolo 30 fatias + 6 Cupcakes + 30 Docinhos)">Kit 03 — R$ 190,00</option>
+              <option value="Kit 04 — R$ 300,00 (Bolo 40 fatias + 6 Cupcakes + 50 Docinhos)">Kit 04 — R$ 300,00</option>
+              <option value="Kit 05 — R$ 350,00 (Bolo 50 fatias + 6 Cupcakes + 50 Docinhos)">Kit 05 — R$ 350,00</option>
+              <option value="Kit 06 — R$ 500,00 (Bolo 70 fatias + 6 Cupcakes + 50 Docinhos)">Kit 06 — R$ 500,00</option>
+            </select>
+          </div>
 
-      <button type="submit" class="btn-whatsapp">
-        📲 Enviar pelo WhatsApp
-      </button>
+          <div class="form-grupo">
+            <label>Massa</label>
+            <select id="massa-kit">
+              <option value="">Selecione a massa...</option>
+              <option value="Red Velvet">Red Velvet</option>
+              <option value="Chocolate">Chocolate</option>
+              <option value="Branca">Branca</option>
+              <option value="Cacau Black (acréscimo no valor)">Cacau Black (acréscimo no valor)</option>
+            </select>
+          </div>
 
-    </form>
+          <div class="form-grupo">
+            <label>Recheio</label>
+            <select id="recheio-kit">
+              <option value="">Selecione o recheio...</option>
+              <option value="Coco">Coco</option>
+              <option value="Prestígio">Prestígio</option>
+              <option value="Brigadeiro/Chocolate">Brigadeiro/Chocolate</option>
+              <option value="Sensação">Sensação</option>
+              <option value="Quatro Leites">Quatro Leites</option>
+              <option value="Limão">Limão</option>
+              <option value="Doce de Leite">Doce de Leite</option>
+              <option value="Maracujá">Maracujá</option>
+              <option value="Ninho">Ninho</option>
+              <option value="Café">Café</option>
+              <option value="Sabor Especial (verificar disponibilidade)">Sabor Especial</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label>Sabor dos docinhos do kit</label>
+            <div class="opcionais-grid">
+              <label class="opcional-item">
+                <input type="checkbox" value="Tradicional"> Tradicional
+              </label>
+              <label class="opcional-item">
+                <input type="checkbox" value="Beijinho"> Beijinho
+              </label>
+              <label class="opcional-item">
+                <input type="checkbox" value="Ninho"> Ninho
+              </label>
+            </div>
+            <p class="form-hint">Você pode escolher mais de um sabor.</p>
+          </div>
+
+        </div>
+
+        <div id="secao-brigadeiro" class="secao-pedido" style="display:none;">
+
+          <div class="form-grupo">
+            <label>Quantidade</label>
+            <select id="brigadeiro">
+              <option value="">Selecione a quantidade...</option>
+              <option value="Cento de Brigadeiros — R$ 150,00">Cento (100 unidades) — R$ 150,00</option>
+            </select>
+          </div>
+
+          <div class="form-grupo">
+            <label>Sabores dos brigadeiros</label>
+            <div class="opcionais-grid">
+              <label class="opcional-item">
+                <input type="checkbox" value="Tradicional"> Tradicional
+              </label>
+              <label class="opcional-item">
+                <input type="checkbox" value="Beijinho"> Beijinho
+              </label>
+              <label class="opcional-item">
+                <input type="checkbox" value="Ninho"> Ninho
+              </label>
+            </div>
+            <p class="form-hint">Você pode escolher mais de um sabor.</p>
+          </div>
+
+        </div>
+
+        <div class="form-grupo">
+          <label>Observações</label>
+          <textarea id="obs" placeholder="Ex: tema da festa, cor, data do evento..." rows="3"></textarea>
+        </div>
+
+        <button type="submit" class="btn-whatsapp">
+          Enviar pelo WhatsApp
+        </button>
+
+      </form>
+    </div>
   </section>
 
-  <!-- RODAPÉ -->
   <footer>
-    <p>© 2025 <strong>Marilene Doces e Amores</strong> — Teresina, PI</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo-nome">Marilene Doces e Amores</div>
+        <p>Teresina, PI — confeitaria artesanal</p>
+      </div>
+      <div class="footer-contato">
+        <a href="https://wa.me/5586994211516" target="_blank" rel="noopener">(86) 99421-1516</a>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 <strong>Marilene Doces e Amores</strong></p>
   </footer>
+
+  <a href="https://wa.me/5586994211516" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <script src="js/script.js"></script>
 </body>

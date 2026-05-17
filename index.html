@@ -3,21 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marilene Doces e Amores</title>
+  <meta name="description" content="Marilene Doces e Amores — bolos artesanais personalizados em Teresina, PI. Encomendas para festas, aniversários e eventos especiais.">
+  <title>Marilene Doces e Amores — Confeitaria Artesanal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;1,9..40,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- NAV -->
   <nav>
-    <div class="logo">Marilene Doces e Amores</div>
+    <a href="index.html" class="logo">
+      <span class="logo-nome">Marilene Doces e Amores</span>
+      <span class="logo-tagline">Confeitaria artesanal</span>
+    </a>
     <ul>
-      <li><a href="index.html">Início</a></li>
+      <li><a href="#inicio" class="ativo">Início</a></li>
+      <li><a href="#diferenciais">Sobre</a></li>
+      <li><a href="#cardapio">Cardápio</a></li>
     </ul>
-    <a href="encomenda.html" class="nav-btn">Fazer Encomenda</a>
+    <a href="encomenda.html" class="nav-btn">Fazer encomenda</a>
   </nav>
 
-  <!-- HERO -->
   <section id="inicio">
     <div class="hero-bg"></div>
     <div class="bolha bolha-1"></div>
@@ -25,13 +32,13 @@
     <div class="bolha bolha-3"></div>
 
     <div class="hero-content">
-      <span class="hero-tag">🎂 Confeitaria Artesanal — Teresina, PI</span>
+      <span class="hero-tag">Teresina, Piauí</span>
       <h1>Bolos feitos com<br><span>amor de verdade</span></h1>
-      <p>Cada bolo é único, preparado com ingredientes frescos e muito carinho para tornar seu momento especial inesquecível.</p>
+      <p>Cada bolo é único — preparado com ingredientes frescos e muito carinho para tornar o seu momento especial inesquecível.</p>
 
       <div class="hero-btns">
-        <a href="encomenda.html" class="btn-primario">Fazer Encomenda</a>
-        <a href="#diferenciais" class="btn-secundario">Saiba mais</a>
+        <a href="encomenda.html" class="btn-primario">Fazer encomenda</a>
+        <a href="#cardapio" class="btn-secundario">Ver cardápio</a>
       </div>
 
       <div class="hero-stats">
@@ -45,47 +52,45 @@
         </div>
         <div class="stat">
           <strong>7 dias</strong>
-          <span>por semana</span>
+          <span>Por semana</span>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- DIFERENCIAIS -->
   <section id="diferenciais">
     <div class="secao-topo revelar">
-      <span class="secao-label">Por que nos escolher?</span>
+      <span class="secao-label">Por que nos escolher</span>
       <h2>Feito com <span>amor e qualidade</span></h2>
+      <p class="secao-desc">Do primeiro ingrediente à decoração final, cada detalhe é pensado para surpreender.</p>
     </div>
 
     <div class="diferenciais-grid">
       <div class="diferencial-card revelar">
         <div class="diferencial-icone">🌿</div>
-        <h3>Ingredientes Frescos</h3>
-        <p>Usamos apenas ingredientes frescos e selecionados em cada bolo, garantindo sabor e qualidade em cada fatia.</p>
+        <h3>Ingredientes frescos</h3>
+        <p>Seleção cuidadosa de ingredientes em cada receita, garantindo sabor e qualidade em cada fatia.</p>
       </div>
       <div class="diferencial-card revelar">
         <div class="diferencial-icone">✨</div>
-        <h3>100% Artesanal</h3>
-        <p>Cada bolo é feito à mão com dedicação e carinho, do recheio à decoração, sem pressa e sem atalhos.</p>
+        <h3>100% artesanal</h3>
+        <p>Feito à mão com dedicação — do recheio à decoração, sem pressa e sem atalhos.</p>
       </div>
       <div class="diferencial-card revelar">
         <div class="diferencial-icone">🎨</div>
-        <h3>Personalizações Exclusivas</h3>
-        <p>Criamos o bolo dos seus sonhos! Escolha tema, cores, recheio e decoração do seu jeito.</p>
+        <h3>Personalização</h3>
+        <p>Tema, cores, recheio e decoração do seu jeito. Criamos o bolo dos seus sonhos.</p>
       </div>
       <div class="diferencial-card revelar">
         <div class="diferencial-icone">🛵</div>
-        <h3>Entrega Disponível</h3>
-        <p>Entregamos em Teresina para você receber seu bolo com comodidade e segurança no dia do evento.</p>
+        <h3>Entrega em Teresina</h3>
+        <p>Receba seu bolo com comodidade e segurança no dia do seu evento.</p>
       </div>
     </div>
   </section>
 
-  <!-- INFO DA LOJA -->
   <section id="info-loja">
     <div class="info-loja-container revelar">
-
       <div class="info-bloco">
         <div class="info-icone">📍</div>
         <div>
@@ -93,163 +98,190 @@
           <p>Teresina, Piauí</p>
         </div>
       </div>
-
-      <div class="info-divisor"></div>
-
       <div class="info-bloco">
         <div class="info-icone">🕐</div>
         <div>
           <h4>Atendimento</h4>
-          <p>Segunda a Domingo</p>
+          <p>Segunda a domingo</p>
           <p>08h às 20h</p>
         </div>
       </div>
-
-      <div class="info-divisor"></div>
-
       <div class="info-bloco">
         <div class="info-icone">💳</div>
         <div>
-          <h4>Formas de Pagamento</h4>
+          <h4>Pagamento</h4>
           <p>Pix · Transferência</p>
-          <p>Cartão de Crédito</p>
+          <p>Cartão de crédito</p>
         </div>
       </div>
-
-      <div class="info-divisor"></div>
-
       <div class="info-bloco">
-        <div class="info-icone">⚠️</div>
+        <div class="info-icone">📋</div>
         <div>
           <h4>Confirmação</h4>
           <p>50% antecipado</p>
-          <p>para confirmar</p>
+          <p>para reservar</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="cardapio">
+    <div class="secao-topo revelar">
+      <span class="secao-label">Nosso cardápio</span>
+      <h2>Sabores e <span>valores</span></h2>
+      <p class="secao-desc">Preços transparentes para você planejar sua festa com tranquilidade.</p>
+    </div>
+
+    <div id="conteudo">
+
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo"><span class="secao-titulo-texto">Tamanhos e preços</span></h3>
+        <div class="cards">
+          <div class="card revelar">
+            <h3>15 fatias</h3>
+            <span class="preco">R$ 115,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>20 fatias</h3>
+            <span class="preco">R$ 130,00</span>
+          </div>
+          <div class="card card-destaque revelar">
+            <h3>30 fatias</h3>
+            <span class="preco">R$ 140,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>40 fatias</h3>
+            <span class="preco">R$ 190,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>50 fatias</h3>
+            <span class="preco">R$ 225,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>70 fatias</h3>
+            <span class="preco">R$ 350,00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo"><span class="secao-titulo-texto">Recheios</span></h3>
+        <div class="lista-grid">
+          <span class="item-lista">Coco</span>
+          <span class="item-lista">Prestígio</span>
+          <span class="item-lista">Brigadeiro / Chocolate</span>
+          <span class="item-lista">Sensação</span>
+          <span class="item-lista">Quatro Leites</span>
+          <span class="item-lista">Limão</span>
+          <span class="item-lista">Doce de Leite</span>
+          <span class="item-lista">Maracujá</span>
+          <span class="item-lista">Ninho</span>
+          <span class="item-lista">Café</span>
+          <span class="item-lista destaque">Sabores especiais — consulte disponibilidade pelo WhatsApp</span>
+        </div>
+      </div>
+
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo"><span class="secao-titulo-texto">Massas</span></h3>
+        <div class="lista-grid">
+          <span class="item-lista">Red Velvet</span>
+          <span class="item-lista">Chocolate</span>
+          <span class="item-lista">Branca</span>
+          <span class="item-lista destaque">Cacau Black — acréscimo no valor</span>
+        </div>
+      </div>
+
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo"><span class="secao-titulo-texto">Kits</span></h3>
+        <div class="cards">
+          <div class="card revelar">
+            <h3>Kit Mensário</h3>
+            <p>Bolo 8 fatias + 4 cupcakes + 10 docinhos</p>
+            <span class="preco">R$ 110,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 01</h3>
+            <p>Bolo 15 fatias + 6 cupcakes</p>
+            <span class="preco">R$ 135,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 02</h3>
+            <p>Bolo 20 fatias + 6 cupcakes + 20 docinhos</p>
+            <span class="preco">R$ 170,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 03</h3>
+            <p>Bolo 30 fatias + 6 cupcakes + 30 docinhos</p>
+            <span class="preco">R$ 190,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 04</h3>
+            <p>Bolo 40 fatias + 6 cupcakes + 50 docinhos</p>
+            <span class="preco">R$ 300,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 05</h3>
+            <p>Bolo 50 fatias + 6 cupcakes + 50 docinhos</p>
+            <span class="preco">R$ 350,00</span>
+          </div>
+          <div class="card revelar">
+            <h3>Kit 06</h3>
+            <p>Bolo 70 fatias + 6 cupcakes + 50 docinhos</p>
+            <span class="preco">R$ 500,00</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="secao-cardapio revelar">
+        <h3 class="secao-titulo"><span class="secao-titulo-texto">Brigadeiros</span></h3>
+        <div class="lista-grid">
+          <span class="item-lista">Cento — R$ 150,00</span>
+        </div>
+      </div>
+
+      <div class="info-pagamento revelar">
+        <div class="info-pagamento-item">
+          <span class="info-pagamento-icone">💳</span>
+          <p>Aceitamos <strong>Pix, transferência e cartão de crédito</strong></p>
+        </div>
+        <div class="info-pagamento-item">
+          <span class="info-pagamento-icone">📋</span>
+          <p>Para confirmar a encomenda, solicitamos <strong>50% do valor antecipado</strong></p>
+        </div>
+        <div class="info-pagamento-item">
+          <span class="info-pagamento-icone">📞</span>
+          <p><strong>(86) 99421-1516</strong> — WhatsApp</p>
         </div>
       </div>
 
     </div>
   </section>
 
-  <!-- CARDÁPIO -->
-  <div id="conteudo">
-
-    <div class="secao-cardapio revelar">
-      <h3 class="secao-titulo">🎂 Tamanhos e Preços</h3>
-      <div class="cards">
-        <div class="card revelar">
-          <h3>15 fatias</h3>
-          <span>R$ 115,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>20 fatias</h3>
-          <span>R$ 130,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>30 fatias</h3>
-          <span>R$ 140,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>40 fatias</h3>
-          <span>R$ 190,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>50 fatias</h3>
-          <span>R$ 225,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>70 fatias</h3>
-          <span>R$ 350,00</span>
-        </div>
-      </div>
+  <div class="cta-banner revelar">
+    <div class="cta-inner">
+      <h3>Pronta para adoçar sua festa?</h3>
+      <p>Monte seu pedido em poucos cliques e fale conosco direto pelo WhatsApp.</p>
+      <a href="encomenda.html" class="btn-primario">Fazer encomenda agora</a>
     </div>
-
-    <div class="secao-cardapio revelar">
-      <h3 class="secao-titulo">🍓 Recheios</h3>
-      <div class="lista-grid">
-        <span class="item-lista">Coco</span>
-        <span class="item-lista">Prestígio</span>
-        <span class="item-lista">Brigadeiro/Chocolate</span>
-        <span class="item-lista">Sensação</span>
-        <span class="item-lista">Quatro Leites</span>
-        <span class="item-lista">Limão</span>
-        <span class="item-lista">Doce de Leite</span>
-        <span class="item-lista">Maracujá</span>
-        <span class="item-lista">Ninho</span>
-        <span class="item-lista">Café</span>
-        <span class="item-lista destaque">✨ Sabores Especiais — verificar disponibilidade via whatsapp</span>
-      </div>
-    </div>
-
-    <div class="secao-cardapio revelar">
-      <h3 class="secao-titulo">🎂 Massas</h3>
-      <div class="lista-grid">
-        <span class="item-lista">Red Velvet</span>
-        <span class="item-lista">Chocolate</span>
-        <span class="item-lista">Branca</span>
-        <span class="item-lista destaque">Cacau Black — acréscimo no valor</span>
-      </div>
-    </div>
-
-    <div class="secao-cardapio revelar">
-      <h3 class="secao-titulo">🎁 Kits</h3>
-      <div class="cards">
-        <div class="card revelar">
-          <h3>Kit Mensário</h3>
-          <p>Bolo (8 fatias) + 4 Cupcakes + 10 Docinhos</p>
-          <span>R$ 110,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>Kit 01</h3>
-          <p>Bolo (15 fatias) + 6 Cupcakes</p>
-          <span>R$ 135,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>Kit 02</h3>
-          <p>Bolo (20 fatias) + 6 Cupcakes + 20 Docinhos</p>
-          <span>R$ 170,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>Kit 03</h3>
-          <p>Bolo (30 fatias) + 6 Cupcakes + 30 Docinhos</p>
-          <span>R$ 190,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>Kit 04</h3>
-          <p>Bolo (40 fatias) + 6 Cupcakes + 50 Docinhos</p>
-          <span>R$ 300,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>Kit 05</h3>
-          <p>Bolo (50 fatias) + 6 Cupcakes + 50 Docinhos</p>
-          <span>R$ 350,00</span>
-        </div>
-        <div class="card revelar">
-          <h3>Kit 06</h3>
-          <p>Bolo (70 fatias) + 6 Cupcakes + 50 Docinhos</p>
-          <span>R$ 500,00</span>
-        </div>
-      </div>
-    </div>
-
-    <div class="secao-cardapio revelar">
-      <h3 class="secao-titulo">🍫 Brigadeiros</h3>
-      <div class="lista-grid">
-        <span class="item-lista">Centro — R$ 150,00</span>
-      </div>
-    </div>
-
-    <div class="info-pagamento revelar">
-      <p>💳 Aceitamos <strong>transferências, Pix e cartão de crédito</strong></p>
-      <p>⚠️ Para confirmação da encomenda solicitamos <strong>50% do valor antecipado</strong></p>
-      <p>📞 <strong>(86) 99421-1516</strong></p>
-    </div>
-
   </div>
 
-  <!-- RODAPÉ -->
   <footer>
-    <p>© 2025 <strong>Marilene Doces e Amores</strong> — Teresina, PI</p>
+    <div class="footer-inner">
+      <div class="footer-brand">
+        <div class="logo-nome">Marilene Doces e Amores</div>
+        <p>Confeitaria artesanal em Teresina. Bolos, kits e doces feitos com carinho para celebrar os momentos que importam.</p>
+      </div>
+      <div class="footer-contato">
+        <a href="https://wa.me/5586994211516" target="_blank" rel="noopener">(86) 99421-1516</a>
+        <span>Segunda a domingo · 08h às 20h</span>
+      </div>
+    </div>
+    <p class="footer-copy">© 2026 <strong>Marilene Doces e Amores</strong> — Teresina, PI</p>
   </footer>
+
+  <a href="https://wa.me/5586994211516" class="wa-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+  </a>
 
   <script src="js/script.js"></script>
 </body>

@@ -1,45 +1,4 @@
 // ================================
-// CURSOR PERSONALIZADO
-// ================================
-var cursor = document.createElement('div');
-cursor.className = 'cursor';
-var anel = document.createElement('div');
-anel.className = 'cursor-anel';
-document.body.appendChild(cursor);
-document.body.appendChild(anel);
-
-var mx = 0, my = 0, ax = 0, ay = 0;
-
-document.addEventListener('mousemove', function(e) {
-  mx = e.clientX;
-  my = e.clientY;
-  cursor.style.left = mx - 6 + 'px';
-  cursor.style.top  = my - 6 + 'px';
-});
-
-function animarAnel() {
-  ax += (mx - ax) * 0.12;
-  ay += (my - ay) * 0.12;
-  anel.style.left = ax + 'px';
-  anel.style.top  = ay + 'px';
-  requestAnimationFrame(animarAnel);
-}
-animarAnel();
-
-document.querySelectorAll('a, button, .card, .item-lista, .opcional-item').forEach(function(el) {
-  el.addEventListener('mouseenter', function() {
-    cursor.style.transform = 'scale(2)';
-    anel.style.transform = 'translate(-50%, -50%) scale(1.5)';
-    anel.style.opacity = '0.5';
-  });
-  el.addEventListener('mouseleave', function() {
-    cursor.style.transform = 'scale(1)';
-    anel.style.transform = 'translate(-50%, -50%) scale(1)';
-    anel.style.opacity = '1';
-  });
-});
-
-// ================================
 // NAV — ENCOLHE AO ROLAR
 // ================================
 window.addEventListener('scroll', function() {
@@ -54,6 +13,28 @@ window.addEventListener('scroll', function() {
 });
 
 // ================================
+// LINK ATIVO NA NAVEGAÇÃO (scroll)
+// ================================
+var navLinks = document.querySelectorAll('nav ul a[href^="#"]');
+if (navLinks.length) {
+  window.addEventListener('scroll', function() {
+    var scrollPos = window.scrollY + 120;
+    navLinks.forEach(function(link) {
+      var id = link.getAttribute('href');
+      if (!id || id === '#') return;
+      var section = document.querySelector(id);
+      if (!section) return;
+      var top = section.offsetTop;
+      var bottom = top + section.offsetHeight;
+      if (scrollPos >= top && scrollPos < bottom) {
+        navLinks.forEach(function(l) { l.classList.remove('ativo'); });
+        link.classList.add('ativo');
+      }
+    });
+  });
+}
+
+// ================================
 // ANIMAÇÃO DE ENTRADA (scroll)
 // ================================
 var observer = new IntersectionObserver(function(entries) {
@@ -62,25 +43,11 @@ var observer = new IntersectionObserver(function(entries) {
       entry.target.classList.add('visivel');
     }
   });
-}, { threshold: 0.15 });
+}, { threshold: 0.12 });
 
 document.querySelectorAll('.revelar').forEach(function(el) {
   observer.observe(el);
 });
-
-// ================================
-// ABAS (index.html)
-// ================================
-function mostrarAba(id, event) {
-  document.querySelectorAll('.aba-conteudo').forEach(function(el) {
-    el.classList.remove('ativa');
-  });
-  document.querySelectorAll('.aba-btn').forEach(function(btn) {
-    btn.classList.remove('ativa');
-  });
-  document.getElementById(id).classList.add('ativa');
-  event.target.classList.add('ativa');
-}
 
 // ================================
 // TIPO DE PEDIDO (encomenda.html)
